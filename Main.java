@@ -14,6 +14,8 @@ public class Main {
                 null, options, options[0]);
         if (response==0) {
             playConsole();
+        } else if (response==-1) {
+            System.exit(0);
         } else {
             SwingUtilities.invokeLater(new Runnable() {
                 @Override
